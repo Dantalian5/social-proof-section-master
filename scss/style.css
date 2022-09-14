@@ -111,13 +111,52 @@ body .attribution .attribution a {
   height: 50%;
   display: flex;
   justify-content: space-between;
-  padding-block: 3%;
+  padding-block: 2%;
 }
 .main_container .bottom_container .review_container {
-  width: 30%;
+  width: 31%;
   height: 80%;
   background-color: hsl(300deg, 43%, 22%);
-  border-radius: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 3%;
+}
+.main_container .bottom_container .review_container .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.main_container .bottom_container .review_container .top .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.main_container .bottom_container .review_container .top .avatar img {
+  width: 100%;
+  height: 100%;
+}
+.main_container .bottom_container .review_container .top h2 {
+  font: 700 17px "League Spartan", sans-serif;
+  color: hsl(300deg, 24%, 96%);
+}
+.main_container .bottom_container .review_container .top h3 {
+  font: 400 17px "League Spartan", sans-serif;
+  color: hsl(333deg, 80%, 67%);
+}
+.main_container .bottom_container .review_container .bottom {
+  margin-top: 10px;
+}
+.main_container .bottom_container .review_container .bottom p {
+  font: 500 18px "League Spartan", sans-serif;
+  line-height: 22px;
+  letter-spacing: -0.039em;
+  color: hsl(300deg, 24%, 96%);
 }
 .main_container .bottom_container .item-1 {
   align-self: flex-start;
