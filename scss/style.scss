@@ -177,6 +177,10 @@ body{
         .item-3{
             align-self: flex-end;
         }
+        .review_container:hover{
+            align-self: center;
+            transform: scale(1.1) ;
+        }
     }
 }
 

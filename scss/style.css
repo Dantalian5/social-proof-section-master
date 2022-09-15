@@ -168,6 +168,10 @@ body .attribution .attribution a {
 .main_container .bottom_container .item-3 {
   align-self: flex-end;
 }
+.main_container .bottom_container .review_container:hover {
+  align-self: center;
+  transform: scale(1.1);
+}
 
 /*tablet responsive media*/
 @media only screen and (max-width: 1000px) {

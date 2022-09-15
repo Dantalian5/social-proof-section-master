@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*Colors*/   
+    /*Primary*/
+        $color-p-very-dark-magenta: hsl(300, 43%, 22%);
+        $color-p-soft-pink: hsl(333, 80%, 67%);
+    /*Neutral*/
+        $color-n-dark-grayish-magenta: hsl(303, 10%, 53%);
+        $color-n-light-grayish-magenta: hsl(300, 24%, 96%);
+        $color-n-white: hsl(0, 0%, 100%);
+/*font family*/
+    $font-family: 'League Spartan', sans-serif;
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    
+        .attribution {
+            position: absolute;
+            bottom: 0px;
+            font-size: 11px;
+            text-align: center;
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+              }
+          }
+          
+    }
+    .main_container{
+        max-width: 1440px;
+        width: 100%;
+        min-width: 350px;
+        
+        height: auto;
+        background: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg), $color-n-white;
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: top left, bottom right;
+        padding:6.5%;
+
+        .top_container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .left_container{
+                width: 100%;
+                height: 270px;
+                padding-block: 0%;
+                padding-inline: 0%;
+                margin-top: 3vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                h1{
+                    font: 700 40px 'League Spartan', sans-serif;
+                    color: $color-p-very-dark-magenta;
+                    line-height: 80%;
+                    text-align: center;
+                    letter-spacing: -0.035em;
+                    margin-top: 2vh;
+                }
+                p{
+                    font: 500 19px 'League Spartan', sans-serif;
+                    text-align: center;
+                    color: $color-n-dark-grayish-magenta;
+                    line-height: 25px;
+                    letter-spacing: -0.034em;
+                }
+            }
+            .right_container{
+                width: 100%;
+                height: 270px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .rating_container{
+                    width: 100%;
+                    height: 70px;
+                    border-radius: 7px;
+                    background: $color-n-light-grayish-magenta;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    h2{
+                        font: 700 17px 'League Spartan', sans-serif;
+                        color: $color-p-very-dark-magenta;
+                    }
+                    span{
+                        font-size: 10px;
+                        margin-inline: 7%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            margin: 3px;
+                        }
+                    }
+
+                }
+                .item-1,
+                .item-2,
+                .item-3{
+                    align-self: center;
+                }
+            }
+        }
+        .bottom_container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-block: 30px;
+            flex-direction: column;
+            justify-content: flex-start;
+
+           .review_container{
+                width: 100%;
+                height: 240px;
+                border-radius: 10px;
+                background: $color-p-very-dark-magenta;
+                padding: 8%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                margin-block: 10px;
+
+                .top{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    .avatar{
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 20px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h2{
+                        font: 700 17px 'League Spartan', sans-serif;
+                        color: $color-n-light-grayish-magenta;
+                    }
+                    h3{
+                        font: 400 17px 'League Spartan', sans-serif;
+                        color: $color-p-soft-pink;
+                    }
+                }
+                .bottom{
+                    margin-top: 10px;
+                    p{
+                        font: 500 18px 'League Spartan', sans-serif;
+                        line-height: 22px;
+                        letter-spacing: -0.039em;
+                        color: $color-n-light-grayish-magenta;
+                    }
+                }
+            }
+            .item-1,
+            .item-2,
+            .item-3{
+                align-self: center;
+            }
+
+        }
+    }
