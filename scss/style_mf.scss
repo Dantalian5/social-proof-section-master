@@ -111,6 +111,7 @@
                         align-items: center;
                         img{
                             margin: 3px;
+                            transition: all 0.3s;
                         }
                     }
 
@@ -228,6 +229,15 @@
                     flex-direction: row;
                     justify-content: flex-start;
 
+                    span{
+                        img:hover{
+                            transform: scale(1.5);
+                        }
+                        img:hover + img{
+                            transform: scale(1.2);
+                        }
+                        
+                    }
                 }
                 .item-1{
                     align-self: flex-start;
@@ -249,10 +259,11 @@
             .review_container{
                 width: 32%;
                 padding-inline: 4%;
+                transition: all 0.5s;
+                
             }
             .review_container:hover{
-                align-self: center;
-                transform: scale(1.1) ;
+                transform: scale(1.1) ;                
             }
             .item-1{
                 align-self: flex-start;

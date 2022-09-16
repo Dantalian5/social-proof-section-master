@@ -102,6 +102,7 @@ body .attribution .attribution a {
 }
 .main_container .top_container .right_container .rating_container span img {
   margin: 3px;
+  transition: all 0.3s;
 }
 .main_container .top_container .right_container .item-1,
 .main_container .top_container .right_container .item-2,
@@ -204,6 +205,12 @@ body .attribution .attribution a {
     flex-direction: row;
     justify-content: flex-start;
   }
+  .main_container .top_container .right_container .rating_container span img:hover {
+    transform: scale(1.5);
+  }
+  .main_container .top_container .right_container .rating_container span img:hover + img {
+    transform: scale(1.2);
+  }
   .main_container .top_container .right_container .item-1 {
     align-self: flex-start;
   }
@@ -222,9 +229,9 @@ body .attribution .attribution a {
   .main_container .bottom_container .review_container {
     width: 32%;
     padding-inline: 4%;
+    transition: all 0.5s;
   }
   .main_container .bottom_container .review_container:hover {
-    align-self: center;
     transform: scale(1.1);
   }
   .main_container .bottom_container .item-1 {
