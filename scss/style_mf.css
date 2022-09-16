@@ -38,7 +38,7 @@ body .attribution .attribution a {
   background-repeat: no-repeat;
   background-size: 100%, 100%;
   background-position: top left, bottom right;
-  padding: 6.5%;
+  padding: 50px 6.5%;
 }
 .main_container .top_container {
   width: 100%;
@@ -53,7 +53,6 @@ body .attribution .attribution a {
   height: 270px;
   padding-block: 0%;
   padding-inline: 0%;
-  margin-top: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +64,6 @@ body .attribution .attribution a {
   line-height: 80%;
   text-align: center;
   letter-spacing: -0.035em;
-  margin-top: 2vh;
 }
 .main_container .top_container .left_container p {
   font: 500 19px "League Spartan", sans-serif;
@@ -97,7 +95,7 @@ body .attribution .attribution a {
 }
 .main_container .top_container .right_container .rating_container span {
   font-size: 10px;
-  margin-inline: 7%;
+  margin-inline: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,4 +166,74 @@ body .attribution .attribution a {
 .main_container .bottom_container .item-2,
 .main_container .bottom_container .item-3 {
   align-self: center;
+}
+
+/*tablet responsive layout*/
+/*desktop responsive layout*/
+@media only screen and (min-width: 1050px) {
+  .main_container {
+    background: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg), hsl(0deg, 0%, 100%);
+    background-size: 35%, 80%;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+  .main_container .top_container {
+    height: 400px;
+    flex-direction: row;
+  }
+  .main_container .top_container .left_container {
+    width: 50%;
+    padding-right: 15%;
+  }
+  .main_container .top_container .left_container h1 {
+    font-size: 55px;
+    line-height: 88%;
+    letter-spacing: -0.029em;
+    text-align: start;
+  }
+  .main_container .top_container .left_container p {
+    text-align: start;
+  }
+  .main_container .top_container .right_container {
+    width: 50%;
+    padding-block: 20px;
+  }
+  .main_container .top_container .right_container .rating_container {
+    width: 80%;
+    height: 55px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .main_container .top_container .right_container .item-1 {
+    align-self: flex-start;
+  }
+  .main_container .top_container .right_container .item-2 {
+    align-self: center;
+  }
+  .main_container .top_container .right_container .item-3 {
+    align-self: flex-end;
+  }
+  .main_container .bottom_container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    padding-block: 30px;
+  }
+  .main_container .bottom_container .review_container {
+    width: 32%;
+    padding-inline: 4%;
+  }
+  .main_container .bottom_container .review_container:hover {
+    align-self: center;
+    transform: scale(1.1);
+  }
+  .main_container .bottom_container .item-1 {
+    align-self: flex-start;
+  }
+  .main_container .bottom_container .item-2 {
+    align-self: center;
+  }
+  .main_container .bottom_container .item-3 {
+    align-self: flex-end;
+  }
 }/*# sourceMappingURL=style_mf.css.map */
